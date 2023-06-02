@@ -30,7 +30,6 @@ section#login{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden;
     background-color: white;
     width: 300px;
@@ -38,6 +37,8 @@ section#login{
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgb(204, 183, 183);
     transition: width 1s, height .3s ;
+    transition-timing-function: ease;
+    transform: translate(-50%, -50%);
 }
 section#login > div#imagem{
     display: block;
@@ -82,11 +83,10 @@ div.campo > input{
     background-color: #94cfcd;
     font-size: 1em;
     width: calc(100% - 44px);
-    transform: translateY(2px);
     border: 0px;
     border-radius: 8px;
     padding: 4px;
-
+    transform: translateY(2px);
 }
 
 .material-symbols-outlined {
